@@ -1,0 +1,58 @@
+
+<body>
+    <div class="container">
+        <div class="title">
+            <p>Lista de pets </p>
+            <a href="/cad">
+                <button div class="button" type="button">Cadastrar</button>
+            </a>
+        </div>
+
+        <table class="user-details">
+            <thead>
+                <tr class="tr">
+                    <th>ID</th>
+                    <th>Dono</th>
+                    <th>Contato</th>                   
+                    <th>Tipo</th>
+                    <th>Raça</th>
+                    <th>Cor</th>
+                    <th>Idade</th>
+                    <th>Opcões</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td colspan="5">
+
+                    </td>
+                </tr>
+            </tfoot>
+
+            <tr>
+            </tr>
+            <tbody>
+                {{#each pets}}
+                <tr>
+                    <input type= "hidden" name="cont" value="{{dataValues.id}}" >
+                    <td>{{dataValues.id}}</td>
+                    <td>{{dataValues.dono}}</td>
+                    <td>{{dataValues.numero}}</td>
+                    <td>{{dataValues.tipo}}</td>
+                    <td>{{dataValues.raca}}</td>
+                    <td>{{dataValues.cor}}</td>
+                    <td>{{dataValues.idade}}</td>
+                    <td>
+                        <a href="/alt/{{dataValues.id}}"><button type="button" >Editar</button></a>
+                        <a href="/deletar/{{dataValues.id}}"><button type="button">Deletar</button></a>
+                    </td>
+                    
+                </tr>
+                {{/each}}
+            </tbody>
+            
+
+        </table>
+        
+    </div>
+</body>

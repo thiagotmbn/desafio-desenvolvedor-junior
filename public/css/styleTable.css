@@ -1,0 +1,89 @@
+/*CSS Table View*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #faea41, #9b59b6);
+}
+
+.container {
+    max-width: 890px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+
+/*Titulo*/
+
+.container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    background: #fff;
+    margin-top: 24px;
+}
+
+.container .title p {
+    margin-bottom: 24px;
+}
+
+.container .title a .button {
+    height: 46px;
+    width: 25%;
+    text-align: center;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: #9c59b6;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+button {
+    height: 20px;
+    width: 60px;
+    text-align: center;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: #9b59b6;
+    cursor: pointer;
+    margin: 1px;
+}
+
+.container .user-details {
+    width: 100%;
+    background-color: #fafafa;
+    padding: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.425);
+    border-radius: 5px;
+    font: 16px;
+    color: rgba(0, 0, 0, 0.815);
+}
+
+td {
+    text-align: center;
+}
+
+th {
+    width: 90px;
+}

@@ -1,0 +1,48 @@
+
+<body>
+
+    <div class="container">
+        <div class="title">
+            <p>{{att}}</p>
+        </div>
+        <form action="/{{act}}" method="post">
+        <div class="input-box">
+                    <span class="details">Dono</span>
+                    <input type="text" name="dono" placeholder="Digite o nome do dono..." required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Contato</span>
+                    <input type="text" name="numero" placeholder="Digite o seu numero para contato..." required>
+                </div>
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Tipo</span>
+                    <select class="select" name="tipo">
+                    <option value="Peixe">Peixe</option>
+                    <option value="Hamster">Hamster</option>
+                    <option value="Coelho">Coelho</option>
+                    <option value="Cachorro">Cachorro</option>
+                    <option value="Gato">Gato</option>
+                </select>
+                </div>
+                <div class="input-box">
+                    <span class="details">Raça</span>
+                    <input type="text" name="raca" placeholder="Digite a Raça do animal" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Cor</span>
+                    <input type="text" name="cor" placeholder="Digite a Cor do animal" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Idade em meses</span>
+                    <input type="phone" name="idade" placeholder="Digite aqui a idade do animal" required>
+                </div>
+
+            </div>
+            <div class="button">
+                <input type="submit" value="{{att}}">
+            </div>
+        </form>
+    </div>
+</body>
+
